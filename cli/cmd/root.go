@@ -202,9 +202,7 @@ func persistentPreRunEFunc(command *cobra.Command, args []string) error {
         is_find, info := pis.FindPackageByUid(pkg_uid)
         if !is_find {
             logger.Printf("can not find pkg_uid=%d", pkg_uid)
-        }
-        else
-        {
+        } else {
             addLibPath(info.Name)
         }
     }
