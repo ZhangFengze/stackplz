@@ -200,9 +200,9 @@ func persistentPreRunEFunc(command *cobra.Command, args []string) error {
             continue
         }
         is_find, info := pis.FindPackageByUid(pkg_uid)
-        if !is_find {
-            return fmt.Errorf("can not find pkg_uid=%d", pkg_uid)
-        }
+        //if !is_find {
+        //    return fmt.Errorf("can not find pkg_uid=%d", pkg_uid)
+        //}
         addLibPath(info.Name)
     }
     // 根据 pkg_name 解析进程架构、获取库文件搜索路径
