@@ -8,7 +8,7 @@ func (this *GlobalConfig) Is32Bit() bool {
 }
 
 func (this *GlobalConfig) GetSyscallConfigFile() string {
-    return "user/config/config_syscall_aarch64.json"
+    return "/sdcard/user/config/config_syscall_aarch64.json"
 }
 
 func (this *GlobalConfig) InitLibraryDirs() {
